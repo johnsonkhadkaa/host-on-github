@@ -1,19 +1,23 @@
 {
-  "name": "backend",
+  "name": "host-on-github",
   "version": "1.0.0",
-  "homepage": "https://ya-gya.github.io/host-react-app.",
-  "description": "first_express_USE",
+  "description": "",
   "main": "app.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy":"gh-pages -d build"
+    "start": "nodemon app.js"
   },
-  "author": "johnson",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ya-gya/host-on-github.git"
+  },
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.2"
+  "bugs": {
+    "url": "https://github.com/ya-gya/host-on-github/issues"
   },
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongodb": "^4.4.0",
+    "mongoose": "^6.2.2"
   }
 }
