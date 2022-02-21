@@ -24,6 +24,6 @@ apps.get('/products/:id', (req,res)=>{
 })
 
 
-apps.listen(9000,(req , res)=>{
+apps.listen(process.env.PORT||9000,(req , res)=>{
     console.log("Server is Running ...");
 })
